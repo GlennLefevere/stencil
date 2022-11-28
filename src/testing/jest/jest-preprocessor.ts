@@ -57,7 +57,7 @@ export const jestPreprocessor = {
     sourcePath: string,
     jestConfig: Jest26Config | Jest27TransformOptions,
     transformOptions?: Jest26Config
-  ): {code: string} {
+  ): { code: string } {
     // TODO(STENCIL-306): Drop support for versions of Jest <27
     /**
      * As of Jest 27, `jestConfig` changes its shape (as it's been moved into `transformOptions`). To preserve
@@ -107,7 +107,7 @@ export const jestPreprocessor = {
       return results;
     }
 
-    return {code: sourceText};
+    return { code: sourceText };
   },
 
   /**
